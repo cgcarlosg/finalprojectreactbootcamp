@@ -6,7 +6,9 @@ const Articles = ({articles}) => (
 <section>
     <h2>Articles</h2>
     <div className="articles-container">
-        <article>
+       {
+           jugadores.map(j=>{
+            <article>
             <h3></h3>
             <div>
                 <button></button>
@@ -15,6 +17,8 @@ const Articles = ({articles}) => (
                 <button></button>
             </div>
         </article>
+           })
+       }
     </div>
 
 </section>
