@@ -1,7 +1,8 @@
 import React from ("react");
+import {connect} from "react-redux";
 
 
-const Articles = () => (
+const Articles = ({articles}) => (
 <section>
     <h2>Articles</h2>
     <div className="articles-container">
@@ -19,4 +20,8 @@ const Articles = () => (
 </section>
 )
 
-export default Articles
+const mapStateToProps = state => ({
+    articles: state.articles
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Articles)
