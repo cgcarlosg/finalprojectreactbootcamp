@@ -6,6 +6,8 @@ function App() {
   return (
     <Provider store={store}>
     <div className="App">
+      <Articles/>
+      <ScoredArticles/>
     
     </div>
     </Provider>
